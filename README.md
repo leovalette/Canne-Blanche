@@ -50,6 +50,9 @@ Now do ```cd ~/workspace/ncappzoo/apps/image-classifier``` and execute ```make a
 
 
 #### LiDaR
+There is the connection diagram to connect the LiDaR to the Raspberry Pi :
+[Connection diagram](https://snag.gy/L1pKEk.jpg)
+
 We need to setup I2C on your Raspberry Pi
 Open up a terminal window and type:  ```sudo raspi-config```
 * Choose option : *5 Interfacing Options*
