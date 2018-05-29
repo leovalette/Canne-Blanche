@@ -1,5 +1,7 @@
 # Canne-Blanche
 
+You can find the main page of the project [here](https://air.imag.fr/index.php/Canne_Blanche).
+
 ## This project consists of :
 
 * an experimentation of IoT technologies allowing visually impaired people to avoid obstacles
@@ -19,10 +21,10 @@ Install [Debian Stretch with Raspberry Pi Desktop](https://www.raspberrypi.org/d
 
 
 #### Movidius NCS
-Open a terminal window (```CTRL + ALT + T```) and create a new directory. We will name it *workspace*.
+Open a terminal window (```CTRL + ALT + T```) and create a new directory. We will name it **workspace**.
 * ```mkdir ~/workspace```
 
-Go into this directory and clone the *ncdsk* repository from Movidius on Github
+Go into this directory and clone the **ncdsk** repository from Movidius on Github
 
 * ```cd ~/workspace```
 * ```git clone https://github.com/movidius/ncsdk.git```
@@ -37,9 +39,9 @@ Let's test your install :
 
 * ```cd ~/workspace/ncsdk/blob/master/examples/apps/hello_ncs_py/```
 * Run ```python hello_ncs_py```. The output should be like this :
-  Hello NCS! Device opened normally.
-  Goodbye NCS! Device closed normally.
-  NCS device working.
+  >Hello NCS! Device opened normally.
+  >Goodbye NCS! Device closed normally.
+  >NCS device working.
 
 You need do download an other repository :
 
@@ -55,13 +57,13 @@ There is the connection diagram to connect the LiDaR to the Raspberry Pi :
 
 We need to setup I2C on your Raspberry Pi
 Open up a terminal window and type:  ```sudo raspi-config```
-* Choose option : *5 Interfacing Options*
-* Choose option : *P5 I2C and hit enter*
-* Choose :  *<Yes>* to turn on the I2C interface
-* Choose : *Ok*
-* Choose :  *Finish*
+* Choose option : **5 Interfacing Options**
+* Choose option : **P5 I2C and hit enter**
+* Choose :  **<Yes>** to turn on the I2C interface
+* Choose : **Ok**
+* Choose :  **Finish**
 Verify your setup by typing ```ls /dev/*i2c*``` in a terminal window.
-If the result of the command looks like this ``` ‘/dev/i2c-1'``` then it is good.
+If the result of the command looks like this ``` '/dev/i2c-1'``` then it is good.
 
 Now you need to install the I2C tools : execute ```sudo apt-get install -y i2c-tools``` in a terminal window.
 
