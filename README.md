@@ -16,6 +16,9 @@ You can find the main page of the project [here](https://air.imag.fr/index.php/C
 ### Raspberry Pi + Movidius NCS + LiDaR
 
 [Raspberry Pi](#raspberry-pi)
+[Movidius NCS](#movidius-ncs)
+[LiDaR](#lidar)
+[Finals steps](#finals-steps)
 
 All the steps of this installation should be done on your Raspberry Pi.
 
