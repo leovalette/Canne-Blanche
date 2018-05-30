@@ -12,7 +12,10 @@ You can find the main page of the project [here](https://air.imag.fr/index.php/C
 
 ## Installation :
 
+
 ### Raspberry Pi + Movidius NCS + LiDaR
+
+[Raspberry Pi](#raspberry-pi)
 
 All the steps of this installation should be done on your Raspberry Pi.
 
@@ -39,9 +42,9 @@ Let's test your install :
 
 * ```cd ~/workspace/ncsdk/blob/master/examples/apps/hello_ncs_py/```
 * Run ```python hello_ncs_py```. The output should be like this :
-  >Hello NCS! Device opened normally.
-  >Goodbye NCS! Device closed normally.
-  >NCS device working.
+  >Hello NCS! Device opened normally.   
+  >Goodbye NCS! Device closed normally.   
+  >NCS device working.   
 
 You need do download an other repository :
 
@@ -59,7 +62,7 @@ We need to setup I2C on your Raspberry Pi
 Open up a terminal window and type:  ```sudo raspi-config```
 * Choose option : **5 Interfacing Options**
 * Choose option : **P5 I2C and hit enter**
-* Choose :  **<Yes>** to turn on the I2C interface
+* Choose :  **Yes** to turn on the I2C interface
 * Choose : **Ok**
 * Choose :  **Finish**
 Verify your setup by typing ```ls /dev/*i2c*``` in a terminal window.

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 # ****************************************************************************
-# Copyright(c) 2017 Intel Corporation. 
+# Copyright(c) 2017 Intel Corporation.
 # License: MIT See LICENSE file in root directory.
 # ****************************************************************************
 
@@ -71,9 +71,9 @@ def pre_process_image( img_draw ):
 
 # ---- Step 4: Read & print inference results from the NCS -------------------
 
-def infer_image( graph, img ):
+def infer_image( graph, img, distance ):
 
-    # The first inference takes an additional ~20ms due to memory 
+    # The first inference takes an additional ~20ms due to memory
     # initializations, so we make a 'dummy forward pass'.
     graph.LoadTensor( img, 'user object' )
     output, userobj = graph.GetResult()
@@ -100,7 +100,7 @@ def infer_image( graph, img ):
                + labels[ order[i] ] )
     print( "==============================================================" )
     print("speaking")
-    command = './lit.sh "' + str(labels[ order[0] ])[9:] + '"'
+    command = './lit.sh "' + str(labels[ order[0] ])[9:] + str(distance) + 'in front of you"'
     #print(command)
     os.system(command)
     print( "==============================================================" )
@@ -115,7 +115,7 @@ def infer_image( graph, img ):
 def close_ncs_device( device, graph ):
     graph.DeallocateGraph()
     device.CloseDevice()
-    
+
 
 # ---- Main function (entry point for this script ) --------------------------
 
@@ -130,8 +130,8 @@ def main():
         return
     else:
         print ("Connected")
-    
-    
+
+
     for i in range(100):
         distance = lidar.getDistance()
         print("Distance to target = %s" % (distance))
@@ -142,11 +142,11 @@ def main():
             graph = load_graph( device )
             img_draw = skimage.io.imread( ARGS.image )
             img = pre_process_image( img_draw )
-            infer_image( graph, img )
-            
+            infer_image( graph, img, distance )
+
             close_ncs_device( device, graph )
-    
-    
+
+
 
 # ---- Define 'main' function as the entry point for this script -------------
 
@@ -160,11 +160,11 @@ if __name__ == '__main__':
     parser.add_argument( '-g', '--graph', type=str,
                          default='../../caffe/GoogLeNet/graph',
                          help="Absolute path to the neural network graph file." )
-    
+
     commandimage = 'raspistill -n --timeout 1 -h 183 -w 275 -o imgtmp.jpg'
     #print(commandimage)
     os.system(commandimage)
-    
+
     parser.add_argument( '-i', '--image', type=str,
                          #default='../../../../Pictures/bouteille.jpg',
                          default='./imgtmp.jpg',
@@ -199,7 +199,7 @@ if __name__ == '__main__':
               open( ARGS.labels ) if line != 'classes\n']
 
     main()
-    
+
     commandrm = 'rm imgtmp.jpg'
     #print(commandrm)
     os.system(commandrm)
