@@ -101,7 +101,6 @@ def infer_image( graph, img, distance ):
     print( "==============================================================" )
     print("speaking")
     command = './lit.sh "' + str(labels[ order[0] ])[9:] + str(distance) + 'in front of you"'
-    #print(command)
     os.system(command)
     print( "==============================================================" )
 
@@ -135,7 +134,7 @@ def main():
     for i in range(100):
         distance = lidar.getDistance()
         print("Distance to target = %s" % (distance))
-        if int(distance) < 50:
+        if int(distance) < 300:
             commandimage = 'raspistill -n --timeout 1 -h 183 -w 275 -o imgtmp.jpg'
             os.system(commandimage)
             device = open_ncs_device()
@@ -162,11 +161,9 @@ if __name__ == '__main__':
                          help="Absolute path to the neural network graph file." )
 
     commandimage = 'raspistill -n --timeout 1 -h 183 -w 275 -o imgtmp.jpg'
-    #print(commandimage)
     os.system(commandimage)
 
     parser.add_argument( '-i', '--image', type=str,
-                         #default='../../../../Pictures/bouteille.jpg',
                          default='./imgtmp.jpg',
                          help="Absolute path to the image that needs to be inferred." )
 
