@@ -12,6 +12,9 @@ You can find the main page of the project [here](https://air.imag.fr/index.php/C
 
 ## Installation :
 
+[Raspberry Pi + Movidius NCS + LiDaR](#raspberry-pi-+-movidius-ncd-+-lidar)  
+[B-L475E-IOT01A + LiDaR](#b-l475e-iot01a-+-lidar)  
+
 
 ### Raspberry Pi + Movidius NCS + LiDaR
 
@@ -85,6 +88,9 @@ Insert this line just before ```# Print the IP address``` :
 * ```sudo python /home/pi/workspace/ncappzoo/apps/image-classifier.py ```   
 
 ### B-L475E-IOT01A + LiDaR
+
+[B-L475E-IOT01A](#b-l475e-iot01a)   
+[LiDaR](#lidar)
 
 ### B-L475E-IOT01A
 
