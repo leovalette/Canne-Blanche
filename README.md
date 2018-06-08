@@ -81,5 +81,13 @@ In a new terminal, execute the following command :
 
 * ```sudo nano /etc/rc.local```
 
-Insert this line just before ```# Print the IP address``` :
-```sudo python /home/pi/workspace/ncappzoo/apps/image-classifier.py ```
+Insert this line just before ```# Print the IP address``` :   
+* ```sudo python /home/pi/workspace/ncappzoo/apps/image-classifier.py ```   
+
+### B-L475E-IOT01A + LiDaR
+
+### B-L475E-IOT01A
+
+#### LiDaR
+There is the connection diagram to connect the LiDaR to the Raspberry Pi :
+![Connection diagram](https://snag.gy/kqniVP.jpg)
