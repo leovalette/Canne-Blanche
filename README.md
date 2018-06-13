@@ -95,5 +95,5 @@ Insert this line just before ```# Print the IP address``` :
 ### B-L475E-IOT01A
 
 #### LiDaR
-There is the connection diagram to connect the LiDaR to the Raspberry Pi :
+There is the connection diagram to connect the LiDaR to the B-L475E-IOT01A :
 ![Connection diagram](https://snag.gy/kqniVP.jpg)
