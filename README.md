@@ -22,7 +22,8 @@ Warning, this install is for Windows. If you are running Linux, please use a vir
 * Follow the installation wizard instructions   
 * Connect your board to your machine   
 * Launch ```VL53L1X_GUI```   
-* Go on the tab named *about* and click on *Flash FW*   
+* Go on the tab named *about* and click on *Flash FW*
+  
 Now you can test your board !
 
 
