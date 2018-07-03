@@ -62,7 +62,7 @@ Now do ```cd ~/workspace/ncappzoo/apps/image-classifier``` and execute ```make a
 
 #### LiDaR
 There is the connection diagram to connect the LiDaR to the Raspberry Pi :
-![Connection diagram](https://snag.gy/L1pKEk.jpg)
+![Connection diagram](https://snag.gy/eGT1FS.jpg)
 
 We need to setup I2C on your Raspberry Pi
 Open up a terminal window and type:  ```sudo raspi-config```
@@ -93,8 +93,10 @@ Insert this line just before ```# Print the IP address``` :
 [LiDaR](#lidar)
 
 ### B-L475E-IOT01A
+To run the program, import it to the [MBed compiler](https://os.mbed.com/compiler/). MBed is an online compiler which allows you to download the binary file to execute for your embedded card.   
 
 
 #### LiDaR
 There is the connection diagram to connect the LiDaR to the B-L475E-IOT01A :
 ![Connection diagram](https://snag.gy/aXzPZR.jpg)
+The represented card here is not the B-L475E-IOT01A but an Arduino Leopardo which have approximately the same pins. Just notice that the pins named SDA and SCl on the Arduino Leopardo are named D14 and D15 on the B-L475E-IOT01A.
