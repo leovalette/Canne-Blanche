@@ -11,7 +11,7 @@ You can find the main page of the project [here](https://air.imag.fr/index.php/C
   * [Movidius Neural Stick with a Raspeberry PI](https://air.imag.fr/index.php/Intel_Movidius)
 
 ## Installation :
-[VL53L1 Time of Flight Ranging Sensor](#vl53l1-time-of-flight-ranging-sensor)
+[VL53L1 Time of Flight Ranging Sensor](#vl53l1-time-of-flight-ranging-sensor)   
 [Raspberry Pi + Movidius NCS + LiDaR](#raspberry-pi-+-movidius-ncd-+-lidar)  
 [B-L475E-IOT01A + LiDaR](#b-l475e-iot01a-+-lidar)  
 
