@@ -11,9 +11,23 @@ You can find the main page of the project [here](https://air.imag.fr/index.php/C
   * [Movidius Neural Stick with a Raspeberry PI](https://air.imag.fr/index.php/Intel_Movidius)
 
 ## Installation :
-
+[VL53L1 Time of Flight Ranging Sensor](#vl53l1-time-of-flight-ranging-sensor)
 [Raspberry Pi + Movidius NCS + LiDaR](#raspberry-pi-+-movidius-ncd-+-lidar)  
 [B-L475E-IOT01A + LiDaR](#b-l475e-iot01a-+-lidar)  
+
+### VL53L1 Time of Flight Ranging Sensor
+
+Warning, this install is for Windows. If you are running Linux, please use a virtual machine.
+
+* Download the [VL53L1X GUI](http://www.st.com/en/embedded-software/stsw-img008.html)   
+* Extract the files from the .zip downloaded which should look like ```en.STSW-IMG008.zip```  
+* Execute ```VL53L1X_Setup.exe```    
+* Follow the installation wizard instructions   
+* Connect your board to your machine   
+* Launch ```VL53L1X_GUI```   
+* Go on the tab named *about* and click on *Flash FW*
+
+Now you can test your board !
 
 
 ### Raspberry Pi + Movidius NCS + LiDaR
