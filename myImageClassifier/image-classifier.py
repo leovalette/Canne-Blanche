@@ -2,7 +2,7 @@
 
 # ****************************************************************************
 # Copyright(c) 2017 Intel Corporation.
-# License: MIT See LICENSE file in root directory.
+# License: MIT See LICENSE file the same directory.
 # ****************************************************************************
 
 # How to classify images using DNNs on Intel Neural Compute Stick (NCS)
@@ -103,11 +103,6 @@ def infer_image( graph, img, distance ):
     command = './lit.sh "' + str(labels[ order[0] ])[9:] + str(distance) + 'in front of you"'
     os.system(command)
     print( "==============================================================" )
-
-    # If a display is available, show the image on which inference was performed
-    #if 'DISPLAY' in os.environ:
-     #   skimage.io.imshow( ARGS.image )
-      #  skimage.io.show()
 
 # ---- Step 5: Unload the graph and close the device -------------------------
 

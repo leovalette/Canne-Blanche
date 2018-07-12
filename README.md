@@ -109,5 +109,5 @@ To run the program, import it to the [MBed compiler](https://os.mbed.com/compile
 
 #### LiDaR
 There is the connection diagram to connect the LiDaR to the B-L475E-IOT01A :
-![Connection diagram](https://snag.gy/aXzPZR.jpg)
-The represented card here is not the B-L475E-IOT01A but an Arduino Leopardo which have approximately the same pins. Just notice that the pins named SDA and SCl on the Arduino Leopardo are named D14 and D15 on the B-L475E-IOT01A.
+![Connection diagram](https://snag.gy/aXzPZR.jpg)   
+The represented card here is not the B-L475E-IOT01A but an Arduino Leopardo which has approximately the same pins. Just notice that the pins named SDA and SCl on the Arduino Leopardo are named D14 and D15 on the B-L475E-IOT01A.
