@@ -1,3 +1,6 @@
+This repository is a modification of the work "Image-classifier" in the NCAPPZOO repository.
+
+
 # image-classifier
 
 Perform image classification using deep neural networks (DNNs) on Intel® Movidius™ Neural Compute Stick (NCS). The <a href="https://movidius.github.io/blog/ncs-image-classifier/">NCS developer blog</a> has a step by step tutorial on how to build this project, and also has a detailed explanation of the source code.
